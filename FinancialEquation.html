@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MathJax AsciiMath Test Page</title>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+</head>
+<body>
+<h1>Financial Equation</h1>
+<p style="text-align:left">
+`{((1 + i)^n * PV + (1 + i * S) * ((1 + i)^n - 1)/i * Pmt + FV = 0, if i ne 0),
+(PV + n * Pmt + FV = 0, if i = 0):}`
+<br/>
+<br/>
+`S lArr {(S = 0 larr \mathbf(text(Delayed Payment))), (S = 1 larr \mathbf(text(Prepayment))) :}`
+<br />
+<table>
+  <tr>
+    <td>`PV`</td>
+    <td>`lArr`</td>
+    <td><b>Present Value</b></td>
+  </tr>
+  <tr>
+    <td>`FV`</td>
+    <td>`lArr`</td>
+    <td><b>Future Value</b></td>
+  </tr>
+  <tr>
+    <td>`Pmt`</td>
+    <td>`lArr`</td>
+    <td><b>Payment</b></td>
+  </tr>
+  <tr>
+    <td>`n`</td>
+    <td>`lArr`</td>
+    <td><b>Periods Number</b></td>
+  </tr>
+  <tr>
+    <td>`i`</td>
+    <td>`lArr`</td>
+    <td><b>Interest Rate</b></td>
+  </tr>
+</table>
+<br />
+<table border="0" cellspacing="0">
+  <tr>
+    <td>`PV = PV(FV, Pmt) rArr PV = - FV * (1 + i)^-n - (1 + i * S) * (1 - (1 + i)^-n) / i * Pmt`</td>
+  </tr>
+  <tr>
+    <td>`FV = FV(PV, Pmt) rArr FV = (- PV - (1 + i * S) * (1 - (1 + i)^-n) / i * Pmt) / (1 + i)^-n`</td>
+  </tr>
+  <tr>
+    <td>`Pmt = Pmt(PV, FV) rArr Pmt = (- PV - FV * (1 + i)^-n) * i / ((1 + i * S) * (1 - (1 + i)^-n))`</td>
+  </tr>
+</table>
+</p>
+</body>
+</html>

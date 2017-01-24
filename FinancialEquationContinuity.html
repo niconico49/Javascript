@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MathJax AsciiMath Test Page</title>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+  </head>
+  <body>
+    <p style="text-align:left">
+`[
+  ((1 + t)^n, (1 + k * t) * ((1 + t)^n - 1) / t, 1),
+  (1, n, 1)
+] * ((x), (y), (z)) = 0
+text( ) {
+  (if t ne 0 larr f_(t ne 0)),
+  (if t = 0 larr f_(t = 0))
+:}`
+<br/>
+`{
+  (t text(,) x text(,) y text(,) z in RR),
+  (n in NN),
+  (k in {0, 1} sub NN)
+:}`
+<br/>
+<br/>
+<b>Property:</b>
+<br/>
+`lim_{t rarr 0} f_{t ne 0} = f_{t = 0} rArr f` <b>continue</b>
+    </p>
+  </body>
+</html>
